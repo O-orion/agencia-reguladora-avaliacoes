@@ -6,9 +6,9 @@ class RegistrarAvalicao {
   index(req, res) {
     const database = path.join(__dirname, '../database/avaliacoes.txt')
     try {
-      const { operadora, filme, avalicaoPSNR, avalicaoSSIM } = req.body;
+      const { idFilme, nomeOperadora, nomeFilme, avalicaoPSNR, avalicaoSSIM } = req.body;
 
-      const avaliacaoString = `${operadora}, ${filme}, ${avalicaoPSNR}, ${avalicaoSSIM}\n`
+      const avaliacaoString = `${nomeOperadora}, ${nomeFilme}, ${avalicaoPSNR}, ${avalicaoSSIM}\n`
 
       fs.appendFile(database, avaliacaoString, (err) => {
         if (err) {
