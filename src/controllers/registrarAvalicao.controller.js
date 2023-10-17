@@ -4,34 +4,32 @@ import path from 'path';
 class RegistrarAvalicao {
   // eslint-disable-next-line class-methods-use-this
   index(req, res) {
-    const database = path.join(__dirname, '../database/avaliacoes.txt')
+    const database = path.join(__dirname, '../database/avaliacoes.txt');
     try {
-      const { idFilme, nomeOperadora, nomeFilme, avalicaoPSNR, avalicaoSSIM } = req.body;
+      const {
+        nomeOperadora, nomeFilme, avalicaoPSNR, avalicaoSSIM,
+      } = req.body;
 
-      const avaliacaoString = `${nomeOperadora}, ${nomeFilme}, ${avalicaoPSNR}, ${avalicaoSSIM}\n`
+      const avaliacaoString = `${nomeOperadora}, ${nomeFilme}, ${avalicaoPSNR}, ${avalicaoSSIM}\n`;
 
+      // eslint-disable-next-line consistent-return
       fs.appendFile(database, avaliacaoString, (err) => {
         if (err) {
           console.error(err);
-          return res.status(500).json({'Error': 'Erro ao registrar a avaliação'})
+          return res.status(500).json({ Error: 'Erro ao registrar a avaliação' });
         }
 
-        console.log(`Avaliação registrada em ${database}`)
-        res.status(200).json({"sucesso": "Avaliação registrada com sucesso!"})
-      })
-
-
-
+        console.log(`Avaliação registrada em ${database}`);
+        res.status(200).json({ sucesso: 'Avaliação registrada com sucesso!' });
+      });
     } catch (error) {
-
-      res.status(500).send("Dandos Invalidos!")
+      res.status(500).send('Dandos Invalidos!');
     }
-
   }
-
+/*
   validarAvalicao(avalicao) {
 
-  }
+  } */
 }
 
 export default new RegistrarAvalicao();

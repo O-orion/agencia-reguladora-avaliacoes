@@ -1,7 +1,9 @@
-Netflix, A fuga das galinhas, 18.55, 0.99
-Netflix, A fuga das galinhas, 18.55, 0.99
-Netflix, A fuga das galinhas, 18.55, 0.99
-Netflix, A fuga das galinhas, 18.55, 0.99
-Netflix, A fuga das galinhas, 18.55, 0.99
-Netflix, A fuga das galinhas, 18.55, 0.99
-Netflix, A fuga das galinhas, 18.55, 0.99
+Netflix, Guardiões da Galáxia: Volume 3, 11.090626826472013, 0.8348958681666263
+Netflix, The Batman, 9.490370892384524, 0.7864154466626022
+Netflix, The Last of Us , 11.284503807472761, 0.860994912393029
+Netflix, Tokyo Revengers, 11.988373641020454, 0.859089479768056
+Netflix, O protetor 2, 16.643291242652698, 0.9577227797312075
+Netflix, The Batman, 9.647458145075001, 0.7904098676366329
+Netflix, Dungeons & Dragons: Honra Entre Ladrões, 11.950413270158766, 0.8579764900614769
+Netflix, Guardiões da Galáxia: Volume 3, 9.490370892384524, 0.7864154466626022
+Netflix, Vinland Saga, 10.671685984371019, 0.8207821177680797
